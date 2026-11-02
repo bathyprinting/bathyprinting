@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bathy Grafika Media — Cetak Cepat, Hasil Tepat | PT. Bathy Grafika Media</title>
+<meta name="description" content="PT. Bathy Grafika Media — cetak online terlengkap: digital printing, stiker, kartu nama & undangan, display promosi, large format, kemasan, dan merchandise. Percetakan komersial di Cisaat, Sukabumi, Jawa Barat. Pesan online, konsultasi mudah, kirim ke seluruh Indonesia.">
+<link rel="icon" type="image/jpeg" href="logo.jpg">
+<link rel="apple-touch-icon" href="logo.jpg">
+<meta property="og:image" content="logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue:#0D4A8F; --blue-2:#0A3A73; --navy:#0A3560; --red:#E30613; --price:#D7263D;
+  --ink:#16233A; --muted:#64748B; --line:#E2E8F0; --alt:#EEF3F8; --pink:#FDE8E8; --sky:#E3ECFA;
+  --wa:#25D366; --radius:18px; --shadow:0 6px 24px rgba(13,42,80,.08);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:118px}
+body{font-family:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:#fff;line-height:1.5}
+a{text-decoration:none;color:inherit}
+img{max-width:100%}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+h1,h2,h3,h4{font-weight:800;line-height:1.2}
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:12px 24px;font-weight:800;font-size:15px;cursor:pointer;border:0;transition:.2s}
+.btn-white{background:#fff;color:var(--blue)}
+.btn-white:hover{background:var(--sky)}
+.btn-orange{background:var(--red);color:#fff}
+.btn-orange:hover{background:#b8050f}
+.btn-blue{background:var(--blue);color:#fff}
+.btn-blue:hover{background:var(--blue-2)}
+
+/* ---------- Header ---------- */
+header{position:sticky;top:0;z-index:60;background:#fff;box-shadow:0 2px 14px rgba(13,42,80,.08)}
+.header-main{display:flex;align-items:center;gap:20px;padding:12px 0}
+.logo{display:flex;align-items:center;gap:11px;flex:0 0 auto}
+.logo-img{height:50px;width:auto;display:block}
+.logo-img.foot{background:#fff;border-radius:10px;padding:5px 8px;height:58px}
+.logo-slogan{font-weight:800;font-size:15.5px;line-height:1.18;color:var(--navy);border-left:2px solid var(--line);padding-left:13px;white-space:nowrap}
+.logo-slogan b{color:var(--red)}
+.search{flex:1;display:flex;align-items:center;background:#F1F5F9;border:1.5px solid transparent;border-radius:999px;padding:5px;max-width:660px;margin:0 auto}
+.search:focus-within{border-color:var(--blue);background:#fff}
+.search .mag{margin:0 4px 0 12px;display:grid;place-items:center}
+.search .mag svg{width:19px;height:19px;stroke:#94A3B8;fill:none;stroke-width:2.2;stroke-linecap:round}
+.search input{flex:1;border:0;background:transparent;padding:10px 8px;font:inherit;font-size:14.5px;color:var(--ink);min-width:0}
+.search input:focus{outline:none}
+.search button{width:41px;height:41px;border-radius:50%;border:0;background:var(--blue);color:#fff;font-size:19px;font-weight:800;cursor:pointer;flex:0 0 auto;line-height:1}
+.search button:hover{background:var(--blue-2)}
+.header-cta{flex:0 0 auto}
+.nav-row{border-top:1px solid var(--line)}
+.nav-links{display:flex;gap:4px;align-items:center;padding:8px 0;overflow-x:auto;scrollbar-width:none}
+.nav-links::-webkit-scrollbar{display:none}
+.nav-links a{padding:8px 13px;border-radius:999px;font-weight:700;font-size:14.5px;white-space:nowrap;color:#33475e}
+.nav-links a:hover{background:var(--alt)}
+.nav-links a.on{background:var(--sky);color:var(--blue)}
+.nav-links a.nav-cat{background:var(--blue);color:#fff;font-weight:800;margin-right:6px}
+.nav-links a.nav-cat:hover{background:var(--blue-2)}
+
+/* ---------- Hero slider ---------- */
+.hero{background-color:var(--alt);background-image:radial-gradient(rgba(13,74,143,.10) 1.2px,transparent 1.3px);background-size:22px 22px;padding:26px 0 32px}
+.slider{position:relative;border-radius:22px;overflow:hidden;box-shadow:var(--shadow)}
+.slide{display:none;min-height:330px;padding:48px 54px;color:#fff;position:relative;overflow:hidden}
+.slide.active{display:flex;flex-direction:column;justify-content:center;animation:fade .6s ease}
+@keyframes fade{from{opacity:.4}to{opacity:1}}
+.sl-1{background:linear-gradient(115deg,#0A3560,#0D4A8F 62%,#1467BD)}
+.sl-2{background:linear-gradient(115deg,#7A0C14,#C00D18 58%,#E30613)}
+.sl-3{background:linear-gradient(115deg,#064C43,#0B7A6B 60%,#12A37F)}
+.slide::after{content:"";position:absolute;top:0;right:0;bottom:0;width:47%;background-size:cover;background-position:center;-webkit-mask-image:linear-gradient(90deg,transparent,#000 32%);mask-image:linear-gradient(90deg,transparent,#000 32%)}
+.sl-1::after{background-image:url('img/hero-besar.jpg')}
+.sl-2::after{background-image:url('img/hero-premium.jpg')}
+.sl-3::after{background-image:url('img/hero-order.jpg')}
+.slide>*{position:relative;z-index:1;max-width:55%}
+.slide .tag{display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.45);padding:5px 13px;border-radius:999px;font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;width:max-content;max-width:100%}
+.slide h2{color:#fff;font-size:clamp(27px,4.2vw,44px);font-weight:800;margin:16px 0 10px}
+.slide p{font-size:16px;color:rgba(255,255,255,.88);margin-bottom:24px}
+.slide .btn{width:max-content}
+.slider .arrow{position:absolute;bottom:18px;right:18px;width:42px;height:42px;border-radius:50%;border:0;background:#fff;color:var(--blue);font-size:20px;font-weight:800;cursor:pointer;z-index:3;box-shadow:0 4px 14px rgba(10,30,60,.25);line-height:1}
+.slider .arrow.prev{right:70px}
+.slider .dots{position:absolute;left:54px;bottom:22px;display:flex;gap:7px;z-index:3}
+.slider .dots button{width:9px;height:9px;border-radius:99px;border:0;background:rgba(255,255,255,.45);cursor:pointer;padding:0;transition:.25s}
+.slider .dots button.on{width:26px;background:#fff}
+
+/* ---------- Strip kepercayaan ---------- */
+.trust{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:22px}
+.trust .t{background:#fff;border-radius:999px;padding:11px 18px 11px 11px;display:flex;gap:12px;align-items:center;box-shadow:var(--shadow)}
+.trust .ic{width:42px;height:42px;border-radius:50%;background:var(--sky);display:grid;place-items:center;flex:0 0 auto}
+.trust .ic svg{width:21px;height:21px;stroke:var(--blue);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.trust .t b{display:block;font-size:14.5px;line-height:1.25}
+.trust .t div{font-size:12.5px;color:var(--muted);line-height:1.35}
+.trust .t::after{content:"\2197";margin-left:auto;color:#94A3B8;font-weight:800;font-size:15px}
+
+/* ---------- Seksi umum ---------- */
+.sec{padding:58px 0}
+.sec-alt{background-color:var(--alt);background-image:radial-gradient(rgba(13,74,143,.09) 1.2px,transparent 1.3px);background-size:22px 22px}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;margin-bottom:26px}
+.sec-head h2{font-size:clamp(24px,3.4vw,33px)}
+.sec-head .more{color:var(--blue);font-weight:700;font-size:14.5px;white-space:nowrap}
+.head-wa{display:none}
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .55s ease,transform .55s ease}
+.reveal.in{opacity:1;transform:none}
+
+/* ---------- Kategori (shortcut) ---------- */
+.cats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.cat{background:#fff;border-radius:20px;overflow:hidden;box-shadow:var(--shadow);cursor:pointer;border:1px solid #EEF2F7;transition:transform .2s,box-shadow .2s}
+.cat:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(13,42,80,.13)}
+.cat-top{padding:16px 16px 22px;position:relative;background:var(--sky)}
+.cat:nth-child(odd) .cat-top{background:var(--pink)}
+.cat-top .ic{width:40px;height:40px;background:#fff;border-radius:50%;display:grid;place-items:center;box-shadow:0 3px 10px rgba(13,42,80,.10)}
+.cat-top .ic svg{width:20px;height:20px;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.cat-arrow{position:absolute;top:16px;right:16px;width:30px;height:30px;border-radius:50%;background:#fff;display:grid;place-items:center;color:var(--blue);font-weight:800;box-shadow:0 3px 10px rgba(13,42,80,.10);font-size:15px}
+.cat-top b{display:block;margin-top:13px;font-size:16.5px}
+.cat-shop{color:var(--blue);font-size:13px;font-weight:700}
+.cat-photo{height:126px;border-radius:26px 26px 0 0/18px 18px 0 0;overflow:hidden;margin-top:-8px;position:relative;background:#DCE7F2}
+.cat-photo img{width:100%;height:100%;object-fit:cover;display:block}
+
+/* ---------- Kartu produk ---------- */
+.prod-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.prod{background:#fff;border-radius:18px;overflow:hidden;box-shadow:var(--shadow);position:relative;display:flex;flex-direction:column;border:1px solid #EEF2F7}
+.prod .cover{height:178px;position:relative;overflow:hidden;background:#F2F6FA}
+.tab-panel .prod .cover{height:205px}
+.cover-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.g1{background:linear-gradient(135deg,#00a8e0,#0a4d8c)}.g2{background:linear-gradient(135deg,#e6007e,#7a0050)}
+.g3{background:linear-gradient(135deg,#ffb800,#e08a00)}.g4{background:linear-gradient(135deg,#5b8def,#274b9f)}
+.g5{background:linear-gradient(135deg,#e30613,#8f060e)}.g6{background:linear-gradient(135deg,#0b8a6e,#065f4d)}
+.g7{background:linear-gradient(135deg,#7c4dff,#3f1d96)}.g8{background:linear-gradient(135deg,#ff7a1a,#c24e00)}
+.badge{position:absolute;top:12px;left:12px;z-index:2;background:#fff;color:var(--red);font-size:11.5px;font-weight:800;padding:5px 11px;border-radius:999px;box-shadow:0 3px 10px rgba(10,30,60,.16)}
+.badge.blue{color:var(--blue)}
+.badge.pink{color:#d6006d}
+.prod .body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:7px;flex:1}
+.prod h3{font-size:16.5px}
+.prod .desc{font-size:13px;color:var(--muted);line-height:1.45;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.price-row{margin-top:auto;display:flex;justify-content:space-between;align-items:flex-end;gap:10px;padding-top:8px}
+.price small{display:block;color:var(--muted);font-size:12px;margin-bottom:1px}
+.price b{color:var(--price);font-size:17px;font-weight:800}
+.ask{width:38px;height:38px;border-radius:50%;background:var(--blue);color:#fff;display:grid;place-items:center;font-size:18px;font-weight:800;flex:0 0 auto;transition:.2s}
+.ask:hover{background:var(--blue-2)}
+.no-result{display:none;background:#FFF4E5;border:1px solid #FFD9A8;color:#7a4d00;border-radius:14px;padding:16px 18px;margin-top:18px;font-size:14.5px}
+
+/* ---------- Jelajahi per kategori ---------- */
+.tabs{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:22px}
+.tabs button{border:1.5px solid var(--line);background:#fff;border-radius:999px;padding:9px 18px;font:inherit;font-weight:700;font-size:14px;cursor:pointer;color:#33475e}
+.tabs button.on{background:var(--blue);color:#fff;border-color:var(--blue)}
+.browse{display:grid;grid-template-columns:272px 1fr;gap:20px;align-items:start}
+.tab-promo{border-radius:20px;overflow:hidden;box-shadow:var(--shadow);background:#fff;border:1px solid #EEF2F7;position:sticky;top:132px}
+.tab-promo .promo-top{padding:18px;background:var(--pink)}
+.tab-promo .promo-top b{display:block;font-size:19px;margin-bottom:2px}
+.tab-promo .promo-top span{color:var(--blue);font-size:13.5px;font-weight:700}
+.tab-promo img{width:100%;height:308px;object-fit:cover;display:block}
+.browse-main .prod-grid{grid-template-columns:repeat(3,1fr)}
+.tab-panel{display:none}
+.tab-panel.on{display:grid}
+
+/* ---------- Mesin & segmen ---------- */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.panel{background:#fff;border-radius:20px;padding:26px;box-shadow:var(--shadow)}
+.panel h3{font-size:19px;margin-bottom:8px}
+.panel p{color:var(--muted);font-size:14.5px}
+.machines{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}
+.machine{background:#F7FAFD;border:1px solid var(--line);border-radius:14px;padding:13px 15px}
+.machine b{display:block;font-size:14.5px;margin-bottom:2px}
+.machine span{font-size:12.5px;color:var(--muted)}
+.segments{display:flex;flex-wrap:wrap;gap:9px;margin-top:18px}
+.segments span{background:var(--sky);color:var(--blue-2);border-radius:999px;padding:8px 14px;font-weight:700;font-size:13px}
+
+/* ---------- Artikel ---------- */
+.art-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.art{background:#fff;border-radius:20px;overflow:hidden;box-shadow:var(--shadow);border:1px solid #EEF2F7;display:flex;flex-direction:column}
+.art .cover{height:148px;position:relative;overflow:hidden;background:#F2F6FA}
+.art .body{padding:16px 18px 18px}
+.art .meta{color:var(--blue);font-weight:800;font-size:12px;text-transform:uppercase;letter-spacing:.07em}
+.art h3{font-size:16px;margin:7px 0 8px;line-height:1.35}
+.art p{font-size:13.5px;color:var(--muted);line-height:1.55}
+
+/* ---------- CTA band ---------- */
+.cta-band{background:linear-gradient(115deg,var(--navy),var(--blue));border-radius:22px;padding:34px 38px;display:flex;justify-content:space-between;align-items:center;gap:24px;color:#fff;margin-top:46px;box-shadow:var(--shadow)}
+.cta-band h2{font-size:clamp(21px,3vw,27px);margin-bottom:6px}
+.cta-band p{color:rgba(255,255,255,.85);font-size:15px;max-width:560px}
+
+/* ---------- Kontak ---------- */
+.contact-grid{display:grid;grid-template-columns:1fr 1.12fr;gap:20px;align-items:start}
+.info-card{background:#fff;border-radius:20px;box-shadow:var(--shadow);padding:10px 26px;border:1px solid #EEF2F7}
+.info-card .row{padding:14px 0;border-bottom:1px dashed var(--line)}
+.info-card .row:last-child{border-bottom:0}
+.info-card .row b{display:block;margin-bottom:3px;font-size:15px}
+.info-card .row span{color:#3C4B61;font-size:14.5px;line-height:1.55}
+#quoteForm{background:#fff;border-radius:20px;box-shadow:var(--shadow);padding:26px;border:1px solid #EEF2F7}
+#quoteForm h3{font-size:19px;margin-bottom:6px}
+#quoteForm>p{color:var(--muted);font-size:14px;margin-bottom:16px}
+.f-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.f-group{margin-bottom:14px}
+.f-group label{font-weight:700;font-size:13.5px;display:block;margin-bottom:6px}
+.f-group input,.f-group select,.f-group textarea{width:100%;border:1.5px solid var(--line);border-radius:12px;padding:11px 14px;font:inherit;font-size:14.5px;background:#FBFCFE;color:var(--ink)}
+.f-group input:focus,.f-group select:focus,.f-group textarea:focus{outline:none;border-color:var(--blue);background:#fff}
+#quoteForm .btn{width:100%;justify-content:center}
+.form-note{display:none;background:#E7F8EE;color:#12703C;border-radius:12px;padding:12px 15px;margin-top:14px;font-size:14px}
+.map{margin-top:20px;border-radius:20px;overflow:hidden;border:1px solid var(--line)}
+.map iframe{width:100%;height:330px;border:0;display:block}
+
+/* ---------- Footer ---------- */
+footer{background:var(--navy);color:#C9D8EA;padding:62px 0 0}
+.foot-grid{display:grid;grid-template-columns:1.35fr .9fr .9fr 1.3fr;gap:32px}
+footer h4{color:#fff;margin-bottom:14px;font-size:16px}
+footer a{display:block;color:#C9D8EA;padding:4px 0;font-size:14.5px}
+footer a:hover{color:#fff}
+footer p{font-size:14.5px;line-height:1.6;color:#A9C3DC}
+.foot-slogan{font-weight:800;font-size:16.5px;color:#FFA02E;letter-spacing:.02em;margin-top:8px}
+.hours-box{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.15);border-radius:14px;padding:14px 16px;margin-top:16px}
+.hours-box b{color:#fff;display:block;margin-bottom:8px;font-size:14.5px}
+.hours-box table{width:100%;font-size:13.5px;color:#C9D8EA;border-collapse:collapse}
+.hours-box td{padding:3.5px 0}
+.hours-box td:last-child{text-align:right;color:#fff;font-weight:700}
+.foot-trust{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid rgba(255,255,255,.16);border-radius:16px;margin:40px 0 24px;overflow:hidden}
+.foot-trust .ft{display:flex;gap:12px;align-items:center;padding:16px 18px;border-left:1px solid rgba(255,255,255,.12)}
+.foot-trust .ft:first-child{border-left:0}
+.foot-trust .ic{width:38px;height:38px;border-radius:50%;background:var(--red);display:grid;place-items:center;flex:0 0 auto}
+.foot-trust .ic svg{width:18px;height:18px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.foot-trust b{color:#fff;display:block;font-size:14px;line-height:1.3}
+.foot-trust span{font-size:12px;color:#A9C3DC}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.14);padding:18px 0 22px;display:flex;justify-content:space-between;gap:12px;font-size:13px;color:#8FB0D4;flex-wrap:wrap}
+
+/* ---------- Melayang ---------- */
+.wa-float{position:fixed;right:20px;bottom:20px;width:56px;height:56px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 10px 26px rgba(18,140,90,.40);z-index:80;border:2px solid #fff}
+.wa-float svg{width:29px;height:29px;fill:#fff}
+.to-top{position:fixed;right:27px;bottom:88px;width:43px;height:43px;border-radius:50%;background:#E8EEF5;color:var(--blue);border:0;font-size:18px;font-weight:800;cursor:pointer;box-shadow:var(--shadow);z-index:80;opacity:0;pointer-events:none;transition:.25s}
+.to-top.show{opacity:1;pointer-events:auto}
+
+/* ---------- Paritas HP ala referensi ---------- */
+.bottom-bar{display:none}
+@media(max-width:820px){
+  body{padding-bottom:62px}
+  html{scroll-padding-top:66px}
+  .foot-bottom{padding-bottom:104px}
+  .header-main{flex-wrap:nowrap;justify-content:flex-start;gap:12px;padding:10px 0}
+  .logo-img{height:38px}
+  .logo-slogan{display:none}
+  .search{display:flex;flex:1;max-width:none;margin:0;padding:4px}
+  .search button{width:37px;height:37px}
+  .header-cta{display:none}
+  .head-wa{display:flex;width:42px;height:42px;border-radius:50%;background:#25D366;align-items:center;justify-content:center;flex:none;box-shadow:0 4px 12px rgba(37,211,102,.4)}
+  .nav-row{display:none}
+  .trust{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 2px 10px;scrollbar-width:none}
+  .trust::-webkit-scrollbar{display:none}
+  .trust .t{flex:0 0 82%;scroll-snap-align:start;border-radius:999px}
+  .wa-float{bottom:82px}
+  .to-top{bottom:150px}
+  .bottom-bar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:90;background:#0A1B31;box-shadow:0 -4px 18px rgba(5,20,40,.35);padding:7px 4px calc(7px + env(safe-area-inset-bottom))}
+  .bottom-bar a{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;color:#9FB4CC;font-size:11px;font-weight:700;padding:3px 0}
+  .bottom-bar a svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+  .bottom-bar a:active,.bottom-bar a:focus{color:#fff}
+}
+@media(max-width:700px){
+  .slide{padding:0 0 26px;min-height:0}
+  .slide.active{justify-content:flex-start}
+  .slide::after{position:relative;order:-1;width:100%;height:205px;flex:0 0 auto;margin:0 0 20px;opacity:1;-webkit-mask-image:none;mask-image:none}
+  .slide>*{max-width:100%;margin-left:24px;margin-right:24px}
+  .slider .dots{display:none}
+  .slider .arrow{bottom:16px;right:16px}
+  .slider .arrow.prev{right:68px;left:auto}
+}
+@media(max-width:430px){
+  .prod-grid,.browse-main .prod-grid{grid-template-columns:repeat(2,1fr);gap:12px}
+  .prod .cover,.tab-panel .prod .cover{height:128px}
+  .prod .body{padding:11px 12px 13px}
+  .prod h3{font-size:14.5px}
+  .prod .desc{font-size:12px}
+  .price b{font-size:15px}
+  .ask{width:34px;height:34px;font-size:16px}
+}
+
+/* ---------- Responsif ---------- */
+@media(max-width:1080px){
+  .prod-grid{grid-template-columns:repeat(3,1fr)}
+  .browse-main .prod-grid{grid-template-columns:repeat(2,1fr)}
+  .art-grid{grid-template-columns:repeat(2,1fr)}
+  .cats{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:920px){
+  .header-main{justify-content:center;flex-wrap:wrap}
+  .browse{grid-template-columns:1fr}
+  .tab-promo{position:static}
+  .tab-promo img{height:190px}
+  .trust{grid-template-columns:repeat(2,1fr)}
+  .split{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .foot-trust{grid-template-columns:1fr 1fr}
+  .foot-trust .ft{border-left:0;border-top:1px solid rgba(255,255,255,.12)}
+  .foot-trust .ft:nth-child(-n+2){border-top:0}
+}
+@media(max-width:820px){
+  .search{display:none}
+  .header-cta{display:none}
+}
+@media(max-width:640px){
+  .prod-grid,.browse-main .prod-grid{grid-template-columns:repeat(2,1fr)}
+  .cats{grid-template-columns:repeat(2,1fr)}
+  .slide{padding:34px 26px;min-height:300px}
+  .slide>*{max-width:100%}
+  .slide::after{width:100%;opacity:.22;-webkit-mask-image:none;mask-image:none}
+  .slider .dots{left:26px}
+  .cta-band{flex-direction:column;align-items:flex-start;padding:28px 24px}
+  .f-row{grid-template-columns:1fr}
+  .sec{padding:44px 0}
+}
+@media(max-width:430px){
+  .prod-grid,.browse-main .prod-grid{grid-template-columns:1fr}
+  .art-grid{grid-template-columns:1fr}
+  .trust{grid-template-columns:1fr}
+  .trust .t{border-radius:20px}
+  .foot-grid{grid-template-columns:1fr}
+  .foot-trust{grid-template-columns:1fr}
+  .foot-trust .ft{border-top:1px solid rgba(255,255,255,.12)}
+  .foot-trust .ft:first-child{border-top:0}
+}
+
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"PT. Bathy Grafika Media","slogan":"Cetak Cepat, Hasil Tepat","description":"Bathy.Printing — percetakan komersial di Sukabumi: digital printing, offset, kemasan, stiker, dan large format.","telephone":"+62 819-3417-3316","email":"Bathy.printing@gmail.com","address":{"@type":"PostalAddress","streetAddress":"Perumahan Istana, Padaasih, Kec. Cisaat","addressLocality":"Kabupaten Sukabumi","addressRegion":"Jawa Barat","postalCode":"43152","addressCountry":"ID"},"openingHours":["Mo-Th 08:00-20:00","Fr-Sa 09:00-17:00","Su 08:00-20:00"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"1"}}
+</script>
+</head>
+<body>
+
+<header>
+  <div class="wrap header-main">
+    <a class="logo" href="#beranda">
+      <img class="logo-img" src="logo.jpg" alt="PT. Bathy Grafika Media — Percetakan Sukabumi" width="1011" height="404">
+    </a>
+    <span class="logo-slogan">Cetak Cepat,<br>hasil <b>Tepat</b>.</span>
+    <form class="search" id="searchForm" role="search">
+      <span class="mag"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.8-3.8"/></svg></span>
+      <input type="search" id="searchInput" placeholder="Mau cetak apa hari ini? Coba: stiker, kalender, box..." aria-label="Cari produk">
+      <button type="submit" aria-label="Cari produk">&rarr;</button>
+    </form>
+    <a class="head-wa" href="https://wa.me/6281934173316" target="_blank" rel="noopener" aria-label="Chat WhatsApp"><svg width="21" height="21" viewBox="0 0 24 24" fill="#fff"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg></a>
+    <a class="btn btn-orange header-cta" href="https://wa.me/6281934173316?text=Halo%20Bathy%20Grafika%20Media%2C%20saya%20ingin%20minta%20penawaran%20cetak." target="_blank" rel="noopener">Minta Penawaran</a>
+  </div>
+  <div class="nav-row">
+    <div class="wrap nav-links">
+      <a class="nav-cat" href="#kategori">&#9783; Kategori</a><a class="on" href="#beranda">Beranda</a><a href="#kategori">Semua Produk</a><a href="#kategori" data-goto-tab="digital">Digital Printing</a><a href="#kategori" data-goto-tab="sticker">Sticker</a><a href="#kategori" data-goto-tab="packaging">Packaging</a><a href="#kategori" data-goto-tab="large">Large Format</a><a href="#mesin">Mesin Kami</a><a href="#artikel">Artikel</a><a href="#kontak">Kontak</a>
+    </div>
+  </div>
+</header>
+
+<!-- ================= HERO SLIDER ================= -->
+<section class="hero" id="beranda">
+  <div class="wrap">
+    <div class="slider" id="slider">
+      <div class="slide sl-1 active">
+        <span class="tag">Cetak Cepat, Hasil Tepat</span>
+        <h2>Order Banyak? Nikmati Layanan Prioritas Produksi</h2>
+        <p>Volume besar untuk kebutuhan korporat dan penerbit — jadwal produksi diprioritaskan dengan kontrol kualitas di setiap tahap.</p>
+        <a class="btn btn-white" href="https://wa.me/6281934173316?text=Halo%20Bathy%20Grafika%20Media%2C%20saya%20ingin%20konsultasi%20cetak." target="_blank" rel="noopener">Konsultasi Sekarang →</a>
+      </div>
+      <div class="slide sl-2">
+        <span class="tag">Baru! Premium</span>
+        <h2>Kartu Nama Premium dengan Spot UV &amp; Foil</h2>
+        <p>Tampil beda sejak perkenalan pertama. Finishing premium untuk kartu nama, undangan, dan materi branding eksklusif.</p>
+        <a class="btn btn-white" href="#pilihan">Lihat Produk →</a>
+      </div>
+      <div class="slide sl-3">
+        <span class="tag">Order Mudah</span>
+        <h2>Bingung Cara Order? Lewat WhatsApp Saja</h2>
+        <p>Kirim file desain dan kebutuhan Anda, tim kami bantu hitungkan spesifikasi dan estimasi harga — tanpa ribet.</p>
+        <a class="btn btn-white" href="https://wa.me/6281934173316" target="_blank" rel="noopener">Chat &amp; Konsultasi →</a>
+      </div>
+      <button class="arrow prev" id="slPrev" aria-label="Slide sebelumnya">‹</button>
+      <button class="arrow next" id="slNext" aria-label="Slide berikutnya">›</button>
+      <div class="dots" id="slDots"></div>
+    </div>
+
+    <div class="trust">
+      <div class="t"><span class="ic"><svg viewBox="0 0 24 24"><path d="M3 8l9-5 9 5v8l-9 5-9-5zM3 8l9 5 9-5M12 13v8"/></svg></span><div><b>Pesan Online</b>Ambil di workshop atau dikirim</div></div>
+      <div class="t"><span class="ic"><svg viewBox="0 0 24 24"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7zM7 20a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM17 20a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></svg></span><div><b>Pengiriman Luas</b>Bisa dikirim ke seluruh Indonesia</div></div>
+      <div class="t"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4L8 11M4 17v3h16v-3"/></svg></span><div><b>Template Desain</b>Panduan ukuran &amp; bleed standar cetak</div></div>
+      <div class="t"><span class="ic"><svg viewBox="0 0 24 24"><path d="M21 12a9 9 0 1 1-4-7.5M21 4l-9.5 9.5a2.1 2.1 0 0 1-3-3L18 1"/></svg></span><div><b>Konsultasi Desain</b>Dibantu cek file sampai siap cetak</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= KATEGORI ================= -->
+<section class="sec" id="kategori">
+  <div class="wrap">
+    <div class="sec-head reveal"><h2>Mau cetak apa hari ini?</h2><a class="more" href="#jelajahi">Lihat semua produk →</a></div>
+    <div class="cats reveal" id="catGrid">
+      <div class="cat" data-goto-tab="digital"><div class="cat-top"><span class="ic" style="background:#e8f3fc"><svg viewBox="0 0 24 24" stroke="#0067b9"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="7"/></svg></span><span class="cat-arrow">&rarr;</span><b>Digital Printing</b><span class="cat-shop">Belanja Digital Printing &rarr;</span></div><div class="cat-photo"><img src="img/print-a3.jpg" alt="Kategori Digital Printing" loading="lazy"></div></div>
+      <div class="cat" data-goto-tab="sticker"><div class="cat-top"><span class="ic" style="background:#fde8f3"><svg viewBox="0 0 24 24" stroke="#e6007e"><path d="M12 3l2.5 5.6 6 .4-4.3 3.9 1.2 5.9L12 15.7l-5.4 3.1 1.2-5.9L3.5 9l6-.4z"/></svg></span><span class="cat-arrow">&rarr;</span><b>Sticker</b><span class="cat-shop">Belanja Sticker &rarr;</span></div><div class="cat-photo"><img src="img/stiker-vinyl.jpg" alt="Kategori Sticker" loading="lazy"></div></div>
+      <div class="cat" data-goto-tab="digital"><div class="cat-top"><span class="ic" style="background:#fff4d6"><svg viewBox="0 0 24 24" stroke="#d97e00"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M7 15h4"/></svg></span><span class="cat-arrow">&rarr;</span><b>Name Card &amp; Invitation</b><span class="cat-shop">Belanja Name Card &amp; Invitation &rarr;</span></div><div class="cat-photo"><img src="img/kartu-nama.jpg" alt="Kategori Name Card &amp; Invitation" loading="lazy"></div></div>
+      <div class="cat" data-goto-tab="large"><div class="cat-top"><span class="ic" style="background:#e6f7f3"><svg viewBox="0 0 24 24" stroke="#0b8a6e"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></span><span class="cat-arrow">&rarr;</span><b>Display Promotion</b><span class="cat-shop">Belanja Display Promotion &rarr;</span></div><div class="cat-photo"><img src="img/x-banner.jpg" alt="Kategori Display Promotion" loading="lazy"></div></div>
+      <div class="cat" data-goto-tab="large"><div class="cat-top"><span class="ic" style="background:#e8f3fc"><svg viewBox="0 0 24 24" stroke="#0067b9"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M12 8v6M9 11l3 3 3-3M5 21h14"/></svg></span><span class="cat-arrow">&rarr;</span><b>Large Format</b><span class="cat-shop">Belanja Large Format &rarr;</span></div><div class="cat-photo"><img src="img/banner-spanduk.jpg" alt="Kategori Large Format" loading="lazy"></div></div>
+      <div class="cat" data-goto-tab="packaging"><div class="cat-top"><span class="ic" style="background:#fde8f3"><svg viewBox="0 0 24 24" stroke="#e6007e"><path d="M21 8 12 3 3 8v8l9 5 9-5zM3 8l9 5 9-5M12 13v8"/></svg></span><span class="cat-arrow">&rarr;</span><b>Packaging</b><span class="cat-shop">Belanja Packaging &rarr;</span></div><div class="cat-photo"><img src="img/box-kemasan.jpg" alt="Kategori Packaging" loading="lazy"></div></div>
+      <div class="cat" data-goto-tab="offset"><div class="cat-top"><span class="ic" style="background:#fff4d6"><svg viewBox="0 0 24 24" stroke="#d97e00"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5zM4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"/></svg></span><span class="cat-arrow">&rarr;</span><b>Buku &amp; Majalah</b><span class="cat-shop">Belanja Buku &amp; Majalah &rarr;</span></div><div class="cat-photo"><img src="img/buku-majalah.jpg" alt="Kategori Buku &amp; Majalah" loading="lazy"></div></div>
+      <div class="cat" data-goto-tab="offset"><div class="cat-top"><span class="ic" style="background:#e6f7f3"><svg viewBox="0 0 24 24" stroke="#0b8a6e"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span><span class="cat-arrow">&rarr;</span><b>Kalender</b><span class="cat-shop">Belanja Kalender &rarr;</span></div><div class="cat-photo"><img src="img/kalender-meja.jpg" alt="Kategori Kalender" loading="lazy"></div></div>
+      <div class="cat" data-goto-tab="digital"><div class="cat-top"><span class="ic" style="background:#e8f3fc"><svg viewBox="0 0 24 24" stroke="#0067b9"><path d="M6 2h9l5 5v15H6zM14 2v6h6M9.5 13h6M9.5 17h6"/></svg></span><span class="cat-arrow">&rarr;</span><b>Stationery</b><span class="cat-shop">Belanja Stationery &rarr;</span></div><div class="cat-photo"><img src="img/kop-surat.jpg" alt="Kategori Stationery" loading="lazy"></div></div>
+      <div class="cat" data-goto-tab="packaging"><div class="cat-top"><span class="ic" style="background:#fde8f3"><svg viewBox="0 0 24 24" stroke="#e6007e"><path d="M6 8h12l1.5 13h-15zM9 8a3 3 0 0 1 6 0"/></svg></span><span class="cat-arrow">&rarr;</span><b>Merchandise</b><span class="cat-shop">Belanja Merchandise &rarr;</span></div><div class="cat-photo"><img src="img/gift-box.jpg" alt="Kategori Merchandise" loading="lazy"></div></div>
+      <div class="cat" data-goto-tab="large"><div class="cat-top"><span class="ic" style="background:#fff4d6"><svg viewBox="0 0 24 24" stroke="#d97e00"><path d="M4 21V8l8-5 8 5v13M9 21v-6h6v6"/></svg></span><span class="cat-arrow">&rarr;</span><b>Home Decor &amp; Photo</b><span class="cat-shop">Belanja Home Decor &amp; Photo &rarr;</span></div><div class="cat-photo"><img src="img/poster.jpg" alt="Kategori Home Decor &amp; Photo" loading="lazy"></div></div>
+      <div class="cat" data-goto-tab="offset"><div class="cat-top"><span class="ic" style="background:#e6f7f3"><svg viewBox="0 0 24 24" stroke="#0b8a6e"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></span><span class="cat-arrow">&rarr;</span><b>Garment &amp; Textile</b><span class="cat-shop">Belanja Garment &amp; Textile &rarr;</span></div><div class="cat-photo"><img src="img/stiker-dtf.jpg" alt="Kategori Garment &amp; Textile" loading="lazy"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRODUK PILIHAN ================= -->
+<section class="sec sec-alt" id="pilihan">
+  <div class="wrap">
+    <div class="sec-head reveal"><h2>Produk pilihan</h2><a class="more" href="#jelajahi">Lihat semua produk →</a></div>
+    <div class="prod-grid" id="pilihanGrid">
+      <article class="prod searchable reveal"><span class="badge">Terlaris</span><div class="cover g1"><img class="cover-img" src="img/id-card.jpg" alt="Foto ID Card" loading="lazy"></div><div class="body"><h3>ID Card</h3><p class="desc">ID card PVC untuk karyawan, event, dan komunitas — bisa satu sisi atau dua sisi.</p><div class="price-row"><div class="price"><small>Mulai dari</small><b>By Request</b></div><a class="ask" href="#kontak" aria-label="Minta harga ID Card">&rarr;</a></div></div></article>
+      <article class="prod searchable reveal"><span class="badge blue">Baru</span><div class="cover g2"><img class="cover-img" src="img/gift-box.jpg" alt="Foto Gift Box Kecil" loading="lazy"></div><div class="body"><h3>Gift Box Kecil</h3><p class="desc">Box kemasan kecil custom untuk produk retail, hampers, dan souvenir perusahaan.</p><div class="price-row"><div class="price"><small>Mulai dari</small><b>By Request</b></div><a class="ask" href="#kontak" aria-label="Minta harga Gift Box Kecil">&rarr;</a></div></div></article>
+      <article class="prod searchable reveal"><div class="cover g3"><img class="cover-img" src="img/x-banner.jpg" alt="Foto X-Banner Wisuda" loading="lazy"></div><div class="body"><h3>X-Banner Wisuda</h3><p class="desc">X-banner dan roll banner untuk wisuda, seminar, dan pameran — rangka kokoh, cetak tajam.</p><div class="price-row"><div class="price"><small>Mulai dari</small><b>By Request</b></div><a class="ask" href="#kontak" aria-label="Minta harga X-Banner Wisuda">&rarr;</a></div></div></article>
+      <article class="prod searchable reveal"><span class="badge pink">Promo</span><div class="cover g5"><img class="cover-img" src="img/stiker-label.jpg" alt="Foto Stiker Label" loading="lazy"></div><div class="body"><h3>Stiker Label</h3><p class="desc">Stiker label kertas &amp; vinyl untuk kemasan produk — potong presisi, bahan tahan air tersedia.</p><div class="price-row"><div class="price"><small>Mulai dari</small><b>By Request</b></div><a class="ask" href="#kontak" aria-label="Minta harga Stiker Label">&rarr;</a></div></div></article>
+      <article class="prod searchable reveal"><div class="cover g4"><img class="cover-img" src="img/kartu-nama-premium.jpg" alt="Foto Kartu Nama Premium" loading="lazy"></div><div class="body"><h3>Kartu Nama Premium</h3><p class="desc">Kartu nama premium dengan finishing spot UV &amp; foil untuk kesan pertama yang berkesan.</p><div class="price-row"><div class="price"><small>Mulai dari</small><b>By Request</b></div><a class="ask" href="#kontak" aria-label="Minta harga Kartu Nama Premium">&rarr;</a></div></div></article>
+      <article class="prod searchable reveal"><div class="cover g6"><img class="cover-img" src="img/kalender-meja.jpg" alt="Foto Kalender Meja" loading="lazy"></div><div class="body"><h3>Kalender Meja</h3><p class="desc">Kalender meja &amp; dinding custom — media branding perusahaan yang tampil sepanjang tahun.</p><div class="price-row"><div class="price"><small>Mulai dari</small><b>By Request</b></div><a class="ask" href="#kontak" aria-label="Minta harga Kalender Meja">&rarr;</a></div></div></article>
+      <article class="prod searchable reveal"><div class="cover g7"><img class="cover-img" src="img/buku-menu.jpg" alt="Foto Buku Menu F&amp;B" loading="lazy"></div><div class="body"><h3>Buku Menu F&amp;B</h3><p class="desc">Buku menu untuk kafe &amp; restoran — laminasi awet, warna menggugah selera.</p><div class="price-row"><div class="price"><small>Mulai dari</small><b>By Request</b></div><a class="ask" href="#kontak" aria-label="Minta harga Buku Menu F&amp;B">&rarr;</a></div></div></article>
+      <article class="prod searchable reveal"><span class="badge">Terlaris</span><div class="cover g8"><img class="cover-img" src="img/paper-bag.jpg" alt="Foto Paper Bag" loading="lazy"></div><div class="body"><h3>Paper Bag</h3><p class="desc">Paper bag custom untuk retail dan event — beragam ukuran dan pilihan tali.</p><div class="price-row"><div class="price"><small>Mulai dari</small><b>By Request</b></div><a class="ask" href="#kontak" aria-label="Minta harga Paper Bag">&rarr;</a></div></div></article>
+    </div>
+    <div class="no-result" id="noResult">Tidak ada produk yang cocok dengan pencarian Anda. Coba kata kunci lain, atau <a href="#kontak" style="color:var(--blue);font-weight:700">tanyakan langsung ke tim kami</a>.</div>
+  </div>
+</section>
+
+<!-- ================= JELAJAHI PER KATEGORI ================= -->
+<section class="sec" id="jelajahi">
+  <div class="wrap">
+    <div class="sec-head reveal"><h2>Jelajahi per kategori</h2></div>
+    <div class="tabs reveal" id="tabBtns">
+      <button class="on" data-tab="digital">Digital Printing</button>
+      <button data-tab="sticker">Sticker</button>
+      <button data-tab="packaging">Packaging</button>
+      <button data-tab="large">Large Format</button>
+      <button data-tab="offset">Offset &amp; Publikasi</button>
+    </div>
+
+    <div class="browse">
+    <aside class="tab-promo"><div class="promo-top"><b id="promoName">Digital Printing</b><span>Kategori pilihan &mdash; belanja sekarang &rarr;</span></div><img id="promoImg" src="img/print-a3.jpg" alt="Kategori Digital Printing"></aside>
+    <div class="browse-main">
+    <div class="prod-grid tab-panel on" data-panel="digital">
+      <article class="prod searchable"><div class="cover g1"><img class="cover-img" src="img/print-a3.jpg" alt="Foto Print A3+" loading="lazy"></div><div class="body"><h3>Print A3+</h3><p class="desc">Cetak A3+ untuk poster, sertifikat, dan materi promosi — selesai cepat.</p><div class="price-row"><div class="price"><small>Mulai dari</small><b>By Request</b></div><a class="ask" href="#kontak" aria-label="Minta harga Print A3+">&rarr;</a></div></div></article>
+      <article class="prod searchable"><div class="cover g4"><img class="cover-img" src="img/kartu-nama.jpg" alt="Foto Kartu Nama" loading="lazy"></div><div class="body"><h3>Kartu Nama</h3><p class="desc">Kartu nama standar &amp; premium, art carton tebal dengan pilihan finishing.</p><div class="price-row"><div class="price"><small>Mulai dari</small><b>By Request</b></div><a class="ask" href="#kontak" aria-label="Minta harga Kartu Nama">&rarr;</a></div></div></article>
+      <article class="prod searchable"><div class="cover g6"><img class="cover-img" src="img/brosur-flyer.jpg" alt="Foto Brosur &amp; Flyer" loading="lazy"></div><div class="body"><h3>Brosur &amp; Flyer</h3><p class="desc">Flyer dan brosur lipat untuk promosi — warna tajam, kertas beragam.</p><div class="price-row"><div class="price"><small>Mulai dari</small><b>By Request</b></div><a class="ask" href="#kontak" aria-label="Minta harga Brosur &amp; Flyer">&rarr;</a></div></div></article>
+      <article class="prod searchable"><div class="cover g7"><img class="cover-img" src="img/undangan.jpg" alt="Foto Undangan" loading="lazy"></div><div class="body"><h3>Undangan</h3><p class="desc">Undangan pernikahan, acara perusahaan, dan komunitas — desain bebas.</p><div class="price-row"><div class="price"><small>Mulai dari</small><b>By Request</b></div><a class="ask" href="#kontak" aria-label="Minta harga Undangan">&rarr;</a></div></div></article>
+    </div>
+
+    <div class="prod-grid tab-panel" data-panel="sticker">
+      <article class="prod searchable"><div class="cover g5"><img class="cover-img" src="img/stiker-vinyl.jpg" alt="Foto Stiker Vinyl" loading="lazy"></div><div class="body"><h3>Stiker Vinyl</h3><p class="desc">Stiker vinyl tahan air &amp; cuaca untuk label outdoor dan kendaraan.</p><div class="price-row"><div class="price"><small>Mulai dari</small><b>By Request</b></div><a class="ask" href="#kontak" aria-label="Minta harga Stiker Vinyl">&rarr;</a></div></div></article>
+      <article class="prod searchable"><div class="cover g2"><img class="cover-img" src="img/stiker-dtf.jpg" alt="Foto Stiker DTF UV" loading="lazy"></div><div class="body"><h3>Stiker DTF UV</h3><p class="desc">Stiker DTF UV timbul untuk botol, kemasan, dan merchandise premium.</p><div class="price-row"><div class="price"><small>Mulai dari</small><b>By Request</b></div><a class="ask" href="#kontak" aria-label="Minta harga Stiker DTF UV">&rarr;</a></div></div></article>
+      <article class="prod searchable"><div class="cover g3"><img class="cover-img" src="img/label-produk.jpg" alt="Foto Label Produk" loading="lazy"></div><div class="body"><h3>Label Produk</h3><p class="desc">Label kertas &amp; transparan untuk makanan, minuman, dan kosmetik.</p><div class="price-row"><div class="price"><small>Mulai dari</small><b>By Request</b></div><a class="ask" href="#kontak" aria-label="Minta harga Label Produk">&rarr;</a></div></div></article>
+      <article class="prod searchable"><div class="cover g8"><img class="cover-img" src="img/cutting-sticker.jpg" alt="Foto Cutting Sticker" loading="lazy"></div><div class="body"><h3>Cutting Sticker</h3><p class="desc">Cutting sticker huruf &amp; logo untuk kaca toko, kendaraan, dan signage.</p><div class="price-row"><div class="price"><small>Mulai dari</small><b>By Request</b></div><a class="ask" href="#kontak" aria-label="Minta harga Cutting Sticker">&rarr;</a></div></div></article>
+    </div>
+
+    <div class="prod-grid tab-panel" data-panel="packaging">
+      <article class="prod searchable"><div class="cover g2"><img class="cover-img" src="img/box-kemasan.jpg" alt="Foto Box Kemasan" loading="lazy"></div><div class="body"><h3>Box Kemasan</h3><p class="desc">Box custom segala bentuk — ivory, art carton, dan duplex, finishing lengkap.</p><div class="price-row"><div class="price"><small>Mulai dari</small><b>By Request</b></div><a class="ask" href="#kontak" aria-label="Minta harga Box Kemasan">&rarr;</a></div></div></article>
+      <article class="prod searchable"><div class="cover g8"><img class="cover-img" src="img/paper-bag.jpg" alt="Foto Paper Bag" loading="lazy"></div><div class="body"><h3>Paper Bag</h3><p class="desc">Paper bag kraft &amp; art paper untuk retail, F&amp;B, dan goodie bag event.</p><div class="price-row"><div class="price"><small>Mulai dari</small><b>By Request</b></div><a class="ask" href="#kontak" aria-label="Minta harga Paper Bag">&rarr;</a></div></div></article>
+      <article class="prod searchable"><div class="cover g3"><img class="cover-img" src="img/kemasan-fnb.jpg" alt="Foto Kemasan F&amp;B" loading="lazy"></div><div class="body"><h3>Kemasan F&amp;B</h3><p class="desc">Paket kemasan untuk usaha kuliner: box, sleeve, label, dan paper cup.</p><div class="price-row"><div class="price"><small>Mulai dari</small><b>By Request</b></div><a class="ask" href="#kontak" aria-label="Minta harga Kemasan F&amp;B">&rarr;</a></div></div></article>
+      <article class="prod searchable"><div class="cover g6"><img class="cover-img" src="img/hang-tag.jpg" alt="Foto Hang Tag" loading="lazy"></div><div class="body"><h3>Hang Tag</h3><p class="desc">Hang tag pakaian &amp; produk dengan lubang dan tali — detail yang berkelas.</p><div class="price-row"><div class="price"><small>Mulai dari</small><b>By Request</b></div><a class="ask" href="#kontak" aria-label="Minta harga Hang Tag">&rarr;</a></div></div></article>
+    </div>
+
+    <div class="prod-grid tab-panel" data-panel="large">
+      <article class="prod searchable"><div class="cover g4"><img class="cover-img" src="img/banner-spanduk.jpg" alt="Foto Banner &amp; Spanduk" loading="lazy"></div><div class="body"><h3>Banner &amp; Spanduk</h3><p class="desc">Banner flexi untuk promosi outdoor — warna pekat, bahan awet.</p><div class="price-row"><div class="price"><small>Mulai dari</small><b>By Request</b></div><a class="ask" href="#kontak" aria-label="Minta harga Banner &amp; Spanduk">&rarr;</a></div></div></article>
+      <article class="prod searchable"><div class="cover g1"><img class="cover-img" src="img/backdrop-event.jpg" alt="Foto Backdrop Event" loading="lazy"></div><div class="body"><h3>Backdrop Event</h3><p class="desc">Backdrop panggung &amp; photobooth untuk seminar, konser, dan gathering.</p><div class="price-row"><div class="price"><small>Mulai dari</small><b>By Request</b></div><a class="ask" href="#kontak" aria-label="Minta harga Backdrop Event">&rarr;</a></div></div></article>
+      <article class="prod searchable"><div class="cover g7"><img class="cover-img" src="img/poster.jpg" alt="Foto Poster A0–A2" loading="lazy"></div><div class="body"><h3>Poster A0–A2</h3><p class="desc">Poster ukuran besar untuk retail, kampanye, dan informasi publik.</p><div class="price-row"><div class="price"><small>Mulai dari</small><b>By Request</b></div><a class="ask" href="#kontak" aria-label="Minta harga Poster A0–A2">&rarr;</a></div></div></article>
+      <article class="prod searchable"><div class="cover g5"><img class="cover-img" src="img/one-way-vision.jpg" alt="Foto Stiker One Way Vision" loading="lazy"></div><div class="body"><h3>Stiker One Way Vision</h3><p class="desc">Stiker kaca one way untuk branding kendaraan dan etalase toko.</p><div class="price-row"><div class="price"><small>Mulai dari</small><b>By Request</b></div><a class="ask" href="#kontak" aria-label="Minta harga Stiker One Way Vision">&rarr;</a></div></div></article>
+    </div>
+
+    <div class="prod-grid tab-panel" data-panel="offset">
+      <article class="prod searchable"><div class="cover g6"><img class="cover-img" src="img/buku-majalah.jpg" alt="Foto Buku &amp; Majalah" loading="lazy"></div><div class="body"><h3>Buku &amp; Majalah</h3><p class="desc">Buku, majalah, dan katalog volume besar — jilid softcover/hardcover.</p><div class="price-row"><div class="price"><small>Mulai dari</small><b>By Request</b></div><a class="ask" href="#kontak" aria-label="Minta harga Buku &amp; Majalah">&rarr;</a></div></div></article>
+      <article class="prod searchable"><div class="cover g3"><img class="cover-img" src="img/kalender-dinding.jpg" alt="Foto Kalender Dinding" loading="lazy"></div><div class="body"><h3>Kalender Dinding</h3><p class="desc">Kalender dinding perusahaan untuk dibagikan ke pelanggan &amp; mitra.</p><div class="price-row"><div class="price"><small>Mulai dari</small><b>By Request</b></div><a class="ask" href="#kontak" aria-label="Minta harga Kalender Dinding">&rarr;</a></div></div></article>
+      <article class="prod searchable"><div class="cover g1"><img class="cover-img" src="img/katalog.jpg" alt="Foto Katalog Produk" loading="lazy"></div><div class="body"><h3>Katalog Produk</h3><p class="desc">Katalog dan company profile untuk tim sales — cetak massal ekonomis.</p><div class="price-row"><div class="price"><small>Mulai dari</small><b>By Request</b></div><a class="ask" href="#kontak" aria-label="Minta harga Katalog Produk">&rarr;</a></div></div></article>
+      <article class="prod searchable"><div class="cover g8"><img class="cover-img" src="img/kop-surat.jpg" alt="Foto Kop Surat &amp; Amplop" loading="lazy"></div><div class="body"><h3>Kop Surat &amp; Amplop</h3><p class="desc">Stationery set perusahaan: kop surat, amplop, map, dan nota NCR.</p><div class="price-row"><div class="price"><small>Mulai dari</small><b>By Request</b></div><a class="ask" href="#kontak" aria-label="Minta harga Kop Surat &amp; Amplop">&rarr;</a></div></div></article>
+    </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MESIN & SEGMEN ================= -->
+<section class="sec sec-alt" id="mesin">
+  <div class="wrap">
+    <div class="sec-head reveal"><h2>Mesin &amp; pelanggan kami</h2></div>
+    <div class="split">
+      <div class="panel reveal">
+        <h3>Didukung lini produksi lengkap</h3>
+        <p>Setiap tahap — dari pra-cetak sampai finishing — dikerjakan di workshop kami agar kualitas dan jadwal tetap terkendali.</p>
+        <div class="machines">
+          <div class="machine"><b>Mesin Cetak Offset</b><span>Volume besar, warna stabil &amp; ekonomis</span></div>
+          <div class="machine"><b>Digital Printing Press</b><span>Cepat untuk volume kecil–menengah</span></div>
+          <div class="machine"><b>Large Format Printer</b><span>Banner, backdrop &amp; poster ukuran besar</span></div>
+          <div class="machine"><b>Mesin Finishing</b><span>Laminasi, spot UV, foil, emboss &amp; die-cut</span></div>
+          <div class="machine"><b>Cutting &amp; Plotter</b><span>Potong presisi untuk stiker &amp; kemasan</span></div>
+          <div class="machine"><b>Unit Penjilidan</b><span>Softcover, hardcover, spiral &amp; staples</span></div>
+        </div>
+      </div>
+      <div class="panel reveal">
+        <h3>Dipercaya berbagai segmen usaha</h3>
+        <p>Dari korporat sampai UMKM, kebutuhan cetaknya berbeda-beda — kami bantu sesuaikan spesifikasi dan anggarannya.</p>
+        <div class="segments">
+          <span>Perusahaan &amp; Korporat</span><span>Penerbit &amp; Percetakan Mitra</span><span>UMKM &amp; F&amp;B</span><span>Event Organizer</span><span>Sekolah &amp; Kampus</span><span>Agensi &amp; Brand</span><span>Retail &amp; E-commerce</span><span>Komunitas</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ARTIKEL ================= -->
+<section class="sec" id="artikel">
+  <div class="wrap">
+    <div class="sec-head reveal"><h2>Artikel &amp; tips cetak</h2><a class="more" href="#artikel">Semua artikel →</a></div>
+    <div class="art-grid">
+      <article class="art reveal"><div class="cover g1"><img class="cover-img" src="img/artikel-file-cetak.jpg" alt="Ilustrasi artikel" loading="lazy"></div><div class="body"><div class="meta">Tips &amp; Trick</div><h3>Menyiapkan File Siap Cetak: CMYK, Bleed, dan Resolusi</h3><p>Tiga hal yang paling sering membuat hasil cetak meleset — dan cara memeriksanya sebelum file dikirim.</p></div></article>
+      <article class="art reveal"><div class="cover g2"><img class="cover-img" src="img/artikel-flyer.jpg" alt="Ilustrasi artikel" loading="lazy"></div><div class="body"><div class="meta">Product</div><h3>Perbedaan Flyer, Leaflet, Brosur, dan Katalog</h3><p>Sama-sama media promosi cetak, tapi fungsi dan bentuknya berbeda. Kenali agar tidak salah pilih.</p></div></article>
+      <article class="art reveal"><div class="cover g3"><img class="cover-img" src="img/artikel-bahan.jpg" alt="Ilustrasi artikel" loading="lazy"></div><div class="body"><div class="meta">Product</div><h3>Memilih Bahan Kemasan: Art Carton, Ivory, atau Kraft?</h3><p>Karakter, kekuatan, dan kesan tiap bahan kemasan — panduan singkat sebelum produksi box produk Anda.</p></div></article>
+      <article class="art reveal"><div class="cover g5"><img class="cover-img" src="img/artikel-kalender.jpg" alt="Ilustrasi artikel" loading="lazy"></div><div class="body"><div class="meta">Tips &amp; Trick</div><h3>Checklist Desain Kalender Custom agar Mudah Dibaca</h3><p>Dari ukuran angka tanggal sampai ruang logo — hal kecil yang membuat kalender perusahaan dipakai setahun penuh.</p></div></article>
+    </div>
+
+    <div class="cta-band reveal">
+      <div>
+        <h2>Masih bingung mau cetak apa?</h2>
+        <p>Ceritakan kebutuhan Anda — tim kami bantu pilihkan produk, bahan, dan cara produksi paling efisien.</p>
+      </div>
+      <a class="btn btn-white" href="#kontak">Konsultasi Gratis →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= KONTAK ================= -->
+<section class="sec" id="kontak" style="padding-bottom:70px">
+  <div class="wrap">
+    <div class="sec-head reveal"><h2>Hubungi kami</h2></div>
+    <div class="contact-grid">
+      <div class="info-card reveal">
+        <div class="row"><div><b>Alamat Workshop</b><span>Perumahan Istana, Padaasih, Kec. Cisaat, Kabupaten Sukabumi, Jawa Barat 43152 — <a href="https://www.google.com/maps/search/?api=1&amp;query=PT.+BATHY+GRAFIKA+MEDIA+Cisaat+Sukabumi" target="_blank" rel="noopener" style="color:var(--blue);font-weight:700">Lihat di Google Maps</a></span></div></div>
+        <div class="row"><div><b>Telepon / WhatsApp</b><span><a href="tel:+6281934173316" style="color:var(--blue);font-weight:700">+62 819-3417-3316</a> — atau <a href="https://wa.me/6281934173316" target="_blank" rel="noopener" style="color:var(--blue);font-weight:700">chat WhatsApp</a></span></div></div>
+        <div class="row"><div><b>Email</b><span><a href="mailto:Bathy.printing@gmail.com" style="color:var(--blue);font-weight:700">Bathy.printing@gmail.com</a></span></div></div>
+        <div class="row"><div><b>Rating Google</b><span>★ 5,0 dari 5 berdasarkan ulasan Google — Bathy.Printing, percetakan Sukabumi</span></div></div>
+        <div class="row"><div><b>Jam Operasional</b><span>Senin–Kamis &amp; Minggu: 08.00–20.00 WIB • Jumat &amp; Sabtu: 09.00–17.00 WIB</span></div></div>
+      </div>
+      <form id="quoteForm" class="reveal" novalidate>
+        <h3>Minta Penawaran</h3>
+        <p>Isi formulir singkat ini — kami tindak lanjuti dengan estimasi harga &amp; saran spesifikasi.</p>
+        <div class="f-row">
+          <div class="f-group"><label for="fNama">Nama *</label><input id="fNama" type="text" placeholder="Nama Anda" required></div>
+          <div class="f-group"><label for="fKontak">Email / No. WhatsApp *</label><input id="fKontak" type="text" placeholder="agar mudah kami hubungi" required></div>
+        </div>
+        <div class="f-row">
+          <div class="f-group"><label for="fJenis">Mau Cetak Apa?</label>
+            <select id="fJenis"><option>Digital Printing</option><option>Sticker</option><option>Name Card &amp; Invitation</option><option>Display Promotion</option><option>Large Format</option><option>Packaging</option><option>Buku &amp; Majalah</option><option>Kalender</option><option>Merchandise</option><option>Lainnya</option></select>
+          </div>
+          <div class="f-group"><label for="fJumlah">Perkiraan Jumlah</label><input id="fJumlah" type="text" placeholder="mis. 500 pcs"></div>
+        </div>
+        <div class="f-group"><label for="fPesan">Detail Kebutuhan</label><textarea id="fPesan" rows="3" placeholder="Ukuran, bahan, finishing, tenggat waktu..."></textarea></div>
+        <button class="btn btn-orange" type="submit">Kirim Permintaan →</button>
+        <div class="form-note" id="formNote">Sebentar — Anda sedang diarahkan ke WhatsApp kami untuk mengirim permintaan ini.</div>
+      </form>
+    </div>
+    <div class="map reveal">
+      <iframe title="Lokasi PT. Bathy Grafika Media di Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://maps.google.com/maps?q=PT.%20BATHY%20GRAFIKA%20MEDIA%2C%20Padaasih%2C%20Cisaat%2C%20Kabupaten%20Sukabumi&t=&z=14&ie=UTF8&iwloc=&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="#beranda" style="margin-bottom:14px">
+          <img class="logo-img foot" src="logo.jpg" alt="PT. Bathy Grafika Media — Percetakan Sukabumi" width="1011" height="404">
+        </a>
+        <p>PT. Bathy Grafika Media — cetak online untuk kebutuhan digital printing, offset, kemasan, dan materi promosi Anda.</p>
+        <p class="foot-slogan">&ldquo;Cetak Cepat, Hasil Tepat.&rdquo;</p>
+      </div>
+      <div><h4>Kategori</h4><a href="#kategori">Digital Printing</a><a href="#kategori">Sticker</a><a href="#kategori">Packaging</a><a href="#kategori">Large Format</a><a href="#kategori">Merchandise</a></div>
+      <div><h4>Jelajahi</h4><a href="#pilihan">Produk Pilihan</a><a href="#jelajahi">Per Kategori</a><a href="#mesin">Mesin Kami</a><a href="#artikel">Artikel &amp; Tips</a><a href="https://wa.me/6281934173316?text=Halo%20Bathy%20Grafika%20Media%2C%20saya%20ingin%20minta%20penawaran%20cetak." target="_blank" rel="noopener">Minta Penawaran</a></div>
+      <div><h4>Kontak</h4><a href="#kontak">Perumahan Istana, Padaasih, Cisaat, Sukabumi 43152</a><a href="tel:+6281934173316">+62 819-3417-3316</a><a href="mailto:Bathy.printing@gmail.com">Bathy.printing@gmail.com</a><a href="https://wa.me/6281934173316" target="_blank" rel="noopener">WhatsApp Kami</a><a href="#kontak">Senin–Minggu • Jam sesuai jadwal</a>
+        <div class="hours-box"><b>Jam Operasional</b><table><tr><td>Senin – Kamis</td><td>08.00 – 20.00</td></tr><tr><td>Jumat</td><td>09.00 – 17.00</td></tr><tr><td>Sabtu</td><td>09.00 – 17.00</td></tr><tr><td>Minggu</td><td>08.00 – 20.00</td></tr></table></div></div>
+    </div>
+    <div class="foot-trust"><div class="ft"><span class="ic"><svg viewBox="0 0 24 24"><path d="M20 12l-8 8-9-9V4h7z"/><circle cx="7.5" cy="7.5" r="1.3"/></svg></span><div><b>Harga Bersaing</b><span>Penawaran jelas &amp; transparan</span></div></div><div class="ft"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 5-3.5 8-7 10-3.5-2-7-5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg></span><div><b>Kualitas Terjaga</b><span>Kontrol di setiap tahap produksi</span></div></div><div class="ft"><span class="ic"><svg viewBox="0 0 24 24"><path d="M13 2L4 14h6l-1 8 9-12h-6z"/></svg></span><div><b>Proses Cepat</b><span>Produksi sesuai jadwal yang disepakati</span></div></div><div class="ft"><span class="ic"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.6L3 21l1.9-5.6A8.5 8.5 0 1 1 21 11.5z"/></svg></span><div><b>Konsultasi Gratis</b><span>Dibantu sampai file siap cetak</span></div></div></div>
+    <div class="foot-bottom">
+      <span>© <span id="year"></span> PT. Bathy Grafika Media. Seluruh hak cipta dilindungi.</span>
+      <span>Cetak Online • Offset • Digital • Kemasan</span>
+    </div>
+  </div>
+</footer>
+
+<nav class="bottom-bar" aria-label="Navigasi bawah"><a href="#kategori"><svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="7" height="7" rx="1.6"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.6"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.6"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.6"/></svg>Kategori</a><a href="#pilihan"><svg viewBox="0 0 24 24"><path d="M4 7l1.2-3h13.6L20 7M4 7h16M4 7v12a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 20 19V7M9.5 20.5v-6h5v6"/></svg>Produk</a><a href="#jelajahi"><svg viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="15" rx="2"/><path d="M3.5 9.5h17M8 15h5"/></svg>Jelajahi</a><a href="https://wa.me/6281934173316?text=Halo%20Bathy%20Grafika%20Media%2C%20saya%20ingin%20minta%20penawaran%20cetak." target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M20 12l-8 8-9-9V4h7z"/><circle cx="7.5" cy="7.5" r="1.3"/></svg>Penawaran</a><a href="#kontak"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 20.5c1.4-3.4 4.2-5 7.5-5s6.1 1.6 7.5 5"/></svg>Kontak</a></nav>
+<button class="to-top" id="toTop" aria-label="Kembali ke atas">&uarr;</button>
+<!-- Tombol WhatsApp melayang: nomor resmi dari profil Google perusahaan -->
+<a class="wa-float" href="https://wa.me/6281934173316" target="_blank" rel="noopener" aria-label="Chat WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.2c-.3.8-1.7 1.6-2.4 1.6-.6.1-1.4.2-4.7-1-4-1.6-6.5-5.6-6.7-5.9-.2-.3-1.6-2.1-1.6-4s.9-2.7 1.3-3.1c.3-.4.7-.5 1-.5h.7c.2 0 .5 0 .7.6l.9 2.2c.1.2.1.4 0 .6l-.4.6-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.2 1.1 2.3 1.5 2.6 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2.1 1c.3.2.5.3.6.5 0 .1 0 .7-.2 1.1z"/></svg>
+</a>
+
+<script>
+(function(){
+  'use strict';
+  /* ---------- Slider promo ---------- */
+  var slides = document.querySelectorAll('#slider .slide');
+  var dotsBox = document.getElementById('slDots');
+  var cur = 0, timer = null;
+  slides.forEach(function(_, i){
+    var d = document.createElement('button');
+    d.setAttribute('aria-label', 'Ke slide ' + (i+1));
+    d.addEventListener('click', function(){ go(i); restart(); });
+    dotsBox.appendChild(d);
+  });
+  var dots = dotsBox.querySelectorAll('button');
+  function go(i){
+    slides[cur].classList.remove('active'); dots[cur].classList.remove('on');
+    cur = (i + slides.length) % slides.length;
+    slides[cur].classList.add('active'); dots[cur].classList.add('on');
+  }
+  function restart(){ clearInterval(timer); timer = setInterval(function(){ go(cur+1); }, 6000); }
+  document.getElementById('slPrev').addEventListener('click', function(){ go(cur-1); restart(); });
+  document.getElementById('slNext').addEventListener('click', function(){ go(cur+1); restart(); });
+  dots[0].classList.add('on'); restart();
+
+  /* ---------- Tabs jelajahi kategori ---------- */
+  var tabBtns = document.querySelectorAll('#tabBtns button');
+  var panels = document.querySelectorAll('.tab-panel');
+  var PROMO = {
+    digital:{n:'Digital Printing', img:'img/print-a3.jpg'},
+    sticker:{n:'Sticker', img:'img/stiker-vinyl.jpg'},
+    packaging:{n:'Packaging', img:'img/box-kemasan.jpg'},
+    large:{n:'Large Format', img:'img/banner-spanduk.jpg'},
+    offset:{n:'Offset & Publikasi', img:'img/buku-majalah.jpg'}
+  };
+  function setTab(name){
+    tabBtns.forEach(function(b){ b.classList.toggle('on', b.getAttribute('data-tab') === name); });
+    panels.forEach(function(p){ p.classList.toggle('on', p.getAttribute('data-panel') === name); });
+    var pr = PROMO[name];
+    if(pr){
+      document.getElementById('promoName').textContent = pr.n;
+      var im = document.getElementById('promoImg');
+      im.src = pr.img; im.alt = 'Kategori ' + pr.n;
+    }
+  }
+  tabBtns.forEach(function(b){ b.addEventListener('click', function(){ setTab(b.getAttribute('data-tab')); }); });
+  document.querySelectorAll('[data-goto-tab]').forEach(function(el){
+    el.addEventListener('click', function(){ setTab(el.getAttribute('data-goto-tab')); });
+  });
+
+  /* ---------- Pencarian produk ---------- */
+  var input = document.getElementById('searchInput');
+  var cards = document.querySelectorAll('.prod.searchable');
+  var noRes = document.getElementById('noResult');
+  function doSearch(q){
+    q = (q || '').trim().toLowerCase();
+    var visible = 0;
+    cards.forEach(function(c){
+      var hit = !q || c.textContent.toLowerCase().indexOf(q) >= 0;
+      c.style.display = hit ? '' : 'none';
+      if(hit) visible++;
+    });
+    noRes.style.display = (q && visible === 0) ? 'block' : 'none';
+    return visible;
+  }
+  document.getElementById('searchForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    doSearch(input.value);
+    document.getElementById('pilihan').scrollIntoView({behavior:'smooth'});
+  });
+  input.addEventListener('input', function(){ doSearch(input.value); });
+
+  /* ---------- Animasi reveal ---------- */
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
+  }, {threshold:.1});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+
+  /* ---------- Formulir ---------- */
+  var form = document.getElementById('quoteForm');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var nama = document.getElementById('fNama').value.trim();
+    var kontak = document.getElementById('fKontak').value.trim();
+    if(!nama || !kontak){
+      alert('Mohon isi Nama dan Email/No. WhatsApp terlebih dahulu.');
+      return;
+    }
+    document.getElementById('formNote').style.display = 'block';
+    var jenis = document.getElementById('fJenis').value;
+    var jumlah = document.getElementById('fJumlah').value.trim();
+    var pesan = document.getElementById('fPesan').value.trim();
+    var teks = 'Halo Bathy Grafika Media, saya ' + nama + ' ingin minta penawaran.%0A' +
+      'Jenis cetakan: ' + encodeURIComponent(jenis) +
+      (jumlah ? '%0AJumlah: ' + encodeURIComponent(jumlah) : '') +
+      (pesan ? '%0ADetail: ' + encodeURIComponent(pesan) : '') +
+      '%0AKontak saya: ' + encodeURIComponent(kontak);
+    // Pindah langsung ke WhatsApp: navigasi satu tab paling andal di HP (tidak kena blokir pop-up).
+    window.location.href = 'https://wa.me/6281934173316?text=' + teks;
+  });
+
+  /* ---------- Tahun otomatis ---------- */
+  document.getElementById('year').textContent = new Date().getFullYear();
+})();
+</script>
+<script>
+  // Tombol "Minta Harga" pada kartu produk langsung membuka WhatsApp berisi nama produk.
+  document.querySelectorAll('.prod .ask').forEach(function (a) {
+    var card = a.closest('.prod');
+    var nama = card ? card.querySelector('h3').textContent.trim() : 'produk Anda';
+    a.href = 'https://wa.me/6281934173316?text=' + encodeURIComponent('Halo Bathy Grafika Media, saya ingin minta harga produk: ' + nama + '.');
+    a.target = '_blank'; a.rel = 'noopener';
+  });
+</script>
+<script>
+  var toTop = document.getElementById('toTop');
+  window.addEventListener('scroll', function(){ toTop.classList.toggle('show', window.scrollY > 600); }, {passive:true});
+  toTop.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
+</script>
+</body>
+</html>

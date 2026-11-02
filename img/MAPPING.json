@@ -1,0 +1,213 @@
+{
+ "id-card": {
+  "file": "img/id-card.jpg",
+  "source_page": "https://pt.rawpixel.com/image/25211947/blank-badge-with-lanyard",
+  "host": "images.rawpixel.com",
+  "fallback_from": null
+ },
+ "gift-box": {
+  "file": "img/gift-box.jpg",
+  "source_page": "https://www.paloubis.com/tag/newsletter/",
+  "host": "paloubis.com",
+  "fallback_from": null
+ },
+ "x-banner": {
+  "file": "img/x-banner.jpg",
+  "source_page": "karya visual dibuat khusus untuk Bathy (v3.3)",
+  "host": "generated",
+  "fallback_from": null
+ },
+ "stiker-label": {
+  "file": "img/stiker-label.jpg",
+  "source_page": "https://unsplash.com/photos/2i7Dn2uMEQE",
+  "host": "townsquare.media",
+  "fallback_from": null,
+  "v2": true
+ },
+ "kartu-nama-premium": {
+  "file": "img/kartu-nama-premium.jpg",
+  "source_page": "https://es.rawpixel.com/all/piedras%20negras%20simulacro%20logo",
+  "host": "images.rawpixel.com",
+  "fallback_from": null
+ },
+ "kalender-meja": {
+  "file": "img/kalender-meja.jpg",
+  "source_page": "https://www.friendshiptaipei.com/calendar",
+  "host": "images.squarespace-cdn.com",
+  "fallback_from": null
+ },
+ "buku-menu": {
+  "file": "img/buku-menu.jpg",
+  "source_page": "https://wartoszkolic.pl/szkolenie/kategoria/szkolenia-gastronomiczne/",
+  "host": "wartoszkolic.pl",
+  "fallback_from": null
+ },
+ "paper-bag": {
+  "file": "img/paper-bag.jpg",
+  "source_page": "https://www.compostcheck.com/can-i-compost/kraft-paper-bag",
+  "host": "images.pexels.com",
+  "fallback_from": null
+ },
+ "print-a3": {
+  "file": "img/print-a3.jpg",
+  "source_page": "karya visual dibuat khusus untuk Bathy (v3.3)",
+  "host": "generated",
+  "fallback_from": null
+ },
+ "kartu-nama": {
+  "file": "img/kartu-nama.jpg",
+  "source_page": "https://www.rawpixel.com/search/real%20estate%20business%20card",
+  "host": "images.rawpixel.com",
+  "fallback_from": null,
+  "v2": true
+ },
+ "brosur-flyer": {
+  "file": "img/brosur-flyer.jpg",
+  "source_page": "https://www.rawpixel.com/image/666180/tri-fold-blank-brochure",
+  "host": "images.rawpixel.com",
+  "fallback_from": null,
+  "v2": true
+ },
+ "undangan": {
+  "file": "img/undangan.jpg",
+  "source_page": "https://rumbie.co/the-comeback-of-printed-wedding-invitations-in-a-digital-first-era/",
+  "host": "rumbie.co",
+  "fallback_from": null
+ },
+ "stiker-vinyl": {
+  "file": "img/stiker-vinyl.jpg",
+  "source_page": "https://www.pexels.com/ (pencarian: vinyl decal/stickers)",
+  "host": "images.pexels.com",
+  "fallback_from": null,
+  "v3.2": "pengganti netral — foto pelangi/PRIDE & holografik dihapus atas permintaan user"
+ },
+ "stiker-dtf": {
+  "file": "img/stiker-dtf.jpg",
+  "source_page": "karya visual dibuat khusus untuk Bathy (v3.3)",
+  "host": "generated",
+  "fallback_from": null
+ },
+ "label-produk": {
+  "file": "img/label-produk.jpg",
+  "source_page": "https://www.zhcns-news-qiezhibo.com/",
+  "host": "images.pexels.com",
+  "fallback_from": null
+ },
+ "cutting-sticker": {
+  "file": "img/cutting-sticker.jpg",
+  "source_page": "https://www.pexels.com/ (pencarian: vinyl decal/stickers)",
+  "host": "images.pexels.com",
+  "fallback_from": null,
+  "v3.2": "pengganti netral — foto pelangi/PRIDE & holografik dihapus atas permintaan user"
+ },
+ "box-kemasan": {
+  "file": "img/box-kemasan.jpg",
+  "source_page": "https://www.arzag-trading.com/",
+  "host": "images.pexels.com",
+  "fallback_from": null
+ },
+ "kemasan-fnb": {
+  "file": "img/kemasan-fnb.jpg",
+  "source_page": "https://www.pexels.com/search/take/",
+  "host": "images.pexels.com",
+  "fallback_from": null
+ },
+ "hang-tag": {
+  "file": "img/hang-tag.jpg",
+  "source_page": "https://sustainacompany.com/blog/certifications-fashion-lifestyle",
+  "host": "static1.squarespace.com",
+  "fallback_from": null
+ },
+ "banner-spanduk": {
+  "file": "img/banner-spanduk.jpg",
+  "source_page": "karya visual dibuat khusus untuk Bathy (v3.3)",
+  "host": "generated",
+  "fallback_from": null
+ },
+ "backdrop-event": {
+  "file": "img/backdrop-event.jpg",
+  "source_page": "https://commons.wikimedia.org/wiki/File:5th_Silver_Show_of_India_2025,_Bangalore_International_Exhibition_Centre_(280).jpg",
+  "host": "upload.wikimedia.org",
+  "fallback_from": null,
+  "v2": true
+ },
+ "poster": {
+  "file": "img/poster.jpg",
+  "source_page": "karya visual dibuat khusus untuk Bathy (v3.3)",
+  "host": "generated",
+  "fallback_from": null
+ },
+ "one-way-vision": {
+  "file": "img/one-way-vision.jpg",
+  "source_page": "https://www.manda-te.com/author/manda-te/page/15/",
+  "host": "www.manda-te.com",
+  "fallback_from": null
+ },
+ "buku-majalah": {
+  "file": "img/buku-majalah.jpg",
+  "source_page": "https://www.pexels.com/ja-jp/photo/8783430/",
+  "host": "images.pexels.com",
+  "fallback_from": null
+ },
+ "kalender-dinding": {
+  "file": "img/kalender-dinding.jpg",
+  "source_page": "https://texaseva.com/fibroids/4-reasons-why-you-get-your-period-twice-a-month/",
+  "host": "texaseva.com",
+  "fallback_from": null
+ },
+ "katalog": {
+  "file": "img/katalog.jpg",
+  "source_page": "https://www.pexels.com/search/videos/catalogue/",
+  "host": "images.pexels.com",
+  "fallback_from": null
+ },
+ "kop-surat": {
+  "file": "img/kop-surat.jpg",
+  "source_page": "https://www.pexels.com/th-th/photo/7718884/",
+  "host": "images.pexels.com",
+  "fallback_from": null
+ },
+ "artikel-file-cetak": {
+  "file": "img/artikel-file-cetak.jpg",
+  "source_page": "https://bkdesignsolutions.com/innovative-web-design-solutions/why-is-my-website-loading-slowly-causes-and-solutions/",
+  "host": "bkdsweb.com",
+  "fallback_from": null
+ },
+ "artikel-flyer": {
+  "file": "img/artikel-flyer.jpg",
+  "source_page": "https://www.pexels.com/photo/a-collage-of-various-posters-and-papers-on-a-wall-15261012/",
+  "host": "images.pexels.com",
+  "fallback_from": "print-a3"
+ },
+ "artikel-bahan": {
+  "file": "img/artikel-bahan.jpg",
+  "source_page": "https://www.rawpixel.com/image/14723006/stack-white-paper-sheets-text",
+  "host": "images.rawpixel.com",
+  "fallback_from": null,
+  "v2": true
+ },
+ "artikel-kalender": {
+  "file": "img/artikel-kalender.jpg",
+  "source_page": "https://www.friendshiptaipei.com/calendar",
+  "host": "images.squarespace-cdn.com",
+  "fallback_from": "kalender-meja"
+ },
+ "hero-besar": {
+  "file": "img/hero-besar.jpg",
+  "source_page": "karya visual dibuat khusus untuk Bathy (v3.3)",
+  "host": "generated",
+  "fallback_from": null
+ },
+ "hero-premium": {
+  "file": "img/hero-premium.jpg",
+  "source_page": "karya visual dibuat khusus untuk Bathy (v3.3)",
+  "host": "generated",
+  "fallback_from": null
+ },
+ "hero-order": {
+  "file": "img/hero-order.jpg",
+  "source_page": "karya visual dibuat khusus untuk Bathy (v3.3)",
+  "host": "generated",
+  "fallback_from": null
+ }
+}
